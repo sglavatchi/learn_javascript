@@ -1,15 +1,14 @@
+var path = require('path');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
-    entry: "./src/index.js",
+    context: path.resolve(__dirname, './src'),
+    entry: {
+        app: './app.js',
+    },
     output: {
-        path: __dirname + "/dist",
-        filename: "bundle.js"
+        filename: '[name].bundle.js',
+        path: path.resolve(__dirname, './src')
     },
-    module: {
-        loaders: [
-            { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }
-        ]
-    },
-    externals: {
-        "jquery": "jQuery"
-    }
+    plugins: [new HtmlWebpackPlugin()]
 }

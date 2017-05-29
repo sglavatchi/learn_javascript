@@ -7,7 +7,7 @@
     "test": "echo \"Error: no tests specified\" && exit 1",
     "build": "webpack && exit 0",
     "build:watch": "webpack --watch",
-    "start": "lite-server -c=bs-config.json"
+    "start": "lite-server -c=bs-config.js"
   },
   "author": "Sergiu Glavatchi",
   "license": "ISC",
@@ -15,11 +15,10 @@
     "babel-core": "^6.24.1",
     "babel-loader": "^7.0.0",
     "babel-preset-latest": "^6.24.1",
+    "browser-sync": "^2.18.12",
+    "html-webpack-plugin": "^2.28.0",
+    "less": "^2.7.2",
     "lite-server": "^2.3.0",
-    "node-sass": "^4.5.3",
     "webpack": "^2.6.0"
-  },
-  "dependencies": {
-    "jquery": "^3.2.1"
   }
 }
