@@ -82,22 +82,17 @@ export const foo = Math.sqrt(2);*/
 
 //document.write("It works.");
 
-const TAX_RATE = 0.08;
+//https://www.safaribooksonline.com/library/view/you-dont-know/9781491924471/ch01.html#chapter-1-into-programming
 
-function calculateFinalPurchaseAmount(amt) {
-    // calculate the new amount with the tax
-    amt = amt + (amt * TAX_RATE);
+var a = ["1", "2", "3"];
+var b = ["1", "2", "3"];
+var c = "1,2,3";
 
-    // return the new amount
-    return amt;
+if (a == b) {
+    console.log("a is equal with b");
 }
 
-var amount = 99.99;
 
-amount = calculateFinalPurchaseAmount(amount);
-
-console.log(amount.toFixed(2));     // "107.99"
-alert(amount.toFixed(2));
 
 /***/ })
 /******/ ]);
