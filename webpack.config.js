@@ -1,5 +1,5 @@
 var path = require('path');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 module.exports = {
     context: path.resolve(__dirname, './src'),
@@ -10,5 +10,12 @@ module.exports = {
         filename: '[name].bundle.js',
         path: path.resolve(__dirname, './src')
     },
-    plugins: [new HtmlWebpackPlugin()]
+    plugins: [new BrowserSyncPlugin({
+        // browse to http://localhost:3000/ during development, 
+        // ./public directory is being served 
+        host: 'localhost',
+        port: 3000,
+        server: { baseDir: ['src'] }
+    })
+    ]
 }

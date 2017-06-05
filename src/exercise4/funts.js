@@ -92,7 +92,7 @@ x;  // 42
 
 ///////////////////////// hoisting //////////////////////////////
 
-https://www.safaribooksonline.com/library/view/you-dont-know/9781491924471/ch02.html#chapter-2-into-javascript
+//https://www.safaribooksonline.com/library/view/you-dont-know/9781491924471/ch02.html#chapter-2-into-javascript
 
 //closure and next
 
